@@ -58,3 +58,10 @@ Either script will take as input data in MAT file format. Specify the filepath a
 ToyData3Clusters-N6kD2.mat is a simple toy dataset of 3 well-separated clusters in 2D space. 6000 examples exist (2000 per cluster). This dataset is mostly provided as a quick way to demo the code's functionality.
 
 ImgPatchData-N50kD64.mat is a dataset of 50,000 image patches from the Berkeley Segmentation dataset. Each row is a 64-dim vector, corresponding to a flattened version of an original 8x8 image patch with its mean removed. This dataset is provided to assess how both implementations scale to larger datasets.
+
+This data is 23MB in size, so you can download it independently by running the following:
+
+```
+$ wget www.michaelchughes.com/research/ImgPatchData-N50kD64.mat 
+```
+
