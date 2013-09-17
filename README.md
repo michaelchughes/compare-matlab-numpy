@@ -8,19 +8,19 @@ Allows users to compare/contrast speed, readability, and syntax for two very pop
 
 # Requirements
 Matlab
+
 Python 2.x, with numpy and scipy
 
 # Quick Start
 From the command line, run the provided shell script
 
-'''
-$ ./EasyDemo.sh
-'''
+    $ ./EasyDemo.sh
 
 This trains a 3 component full-covariance GMM in both Matlab and Python, printing progress to stdout in a standard format:  iterations done, seconds elapsed, log likelihood objective function value.
 
 ## Expected output
-'''
+
+```
 ------------------------------------ Python 
 EM for Mixture of 3 Gaussians | seed=8675309
     1/10 after 0 sec | -2.6887638683e+04
@@ -47,7 +47,7 @@ EM for Mixture of 3 Gaussians | seed=8675309
      9/10 after 0 sec | -2.4102758013e+04 
     10/10 after 0 sec | -2.4101339372e+04 
 w =    0.2438    0.4181    0.3380
-'''
+```
 
 Both implementations should yield *exactly* the same results, since we provide the same input and the same random seed.
 
